@@ -1,0 +1,49 @@
+# Corporate Finance Autopilot – Hackathon Submission
+
+## Problem
+
+Analyzing companies for investment or credit decisions requires combining financial data, forecasting, and qualitative reasoning. Existing tools either provide raw data or static dashboards, lacking integrated intelligence.
+
+## Approach
+
+We built an AI-driven pipeline that:
+
+1. Ingests public company data (Yahoo Finance)
+2. Validates and structures financial information
+3. Generates financial forecasts (Base/Upside/Downside)
+4. Computes risk scores based on growth and volatility
+5. Uses AI to generate insights, advisory, and structured reports
+6. Presents results in an interactive dashboard
+
+## Key Design Decisions
+
+* Used existing libraries (yfinance, pandas) for fast and reliable data ingestion
+* Built modular pipeline (run.py) for repeatability
+* Separated modeling, risk, and AI layers for clarity
+* Focused on decision-ready outputs instead of raw data
+
+## Trade-offs
+
+* Simplified financial model to prioritize speed and clarity
+* Limited handling of edge cases (e.g., pre-revenue biotech companies)
+* No full deployment (local demo only)
+
+## What Makes This Strong
+
+* End-to-end pipeline (data → model → AI → output)
+* Combines quantitative modeling with qualitative AI reasoning
+* Generates investor-style reports, not just dashboards
+* Handles diverse company types (growth, distressed, biotech)
+
+## Next Steps (1 Week Plan)
+
+* Add multi-agent AI (planner + tools + memory)
+* Improve financial modeling (DCF, scenario weighting)
+* Add deployment (Docker + cloud hosting)
+* Enhance data sources (filings, transcripts, scraping)
+* Improve visualization (investor-grade charts)
+
+## AI Usage
+
+* AI used for generating summaries, financial interpretation, and advisory
+* Multi-step pipeline ensures outputs are derived from structured data, not raw prompts
